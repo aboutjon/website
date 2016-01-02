@@ -1,0 +1,492 @@
+/* style.scss */
+/* TOP LEFT BOTTOM RIGHT */
+
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700)
+
+$main-color: #56a2ce
+$style: solid
+$base-grey: #303030
+$secondary-grey: #a4a4a4
+
+html
+	-webkit-transition: background 0.2s linear
+	-moz-transition: background 0.2s linear
+	-ms-transition: background 0.2s linear
+	-o-transition: background 0.2s linear
+	transition: background 0.2s linear
+
+body
+	margin: 0
+	padding: 0
+	font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif
+	color: #333
+
+ul, li
+	margin: 0
+	padding: 0
+
+h1
+	font-size: 24px
+	
+h1 a
+	color: #333
+
+h1 a:hover
+	color: #898989
+
+a 
+	color: $main-color
+	&:hover
+	text-decoration: none
+	cursor: pointer
+
+a:hover
+	color: darken($main-color, 20)
+
+::selection
+	background: #b2d2bd
+
+::-moz-selection
+	background: #b2d2bd
+
+p
+	margin-top: 5px
+	margin-bottom: 5px
+
+.clear
+	clear: both
+
+.bread-menu
+	float: left
+
+.bread-menu a
+	font-size: 13px
+	font-weight: 600
+	color: $base-grey
+
+.bread-menu .arrow
+	display: inline
+	background: url('/img/keyboard53.svg') no-repeat
+	background-size: 14px 14px
+	width: 50px
+	padding-left: 20px
+	background-position: 2px 4px
+
+.bread-menu .arrow a
+	font-size: 13px
+	font-weight: 400
+	color: $secondary-grey
+
+.main-menu
+	float: right
+
+.main-menu a
+	font-size: 13px
+	font-weight: 600
+	color: $base-grey
+	margin-left: 20px
+	-webkit-transition: color 0.2s linear
+	-moz-transition: color 0.2s linear
+	-ms-transition: color 0.2s linear
+	-o-transition: color 0.2s linear
+	transition: color 0.2s linear
+
+.main-menu .arrow
+	display: inline
+	background: url('/img/keyboard53.svg') no-repeat
+	background-size: 14px 14px
+	width: 50px
+	padding-left: 20px
+	background-position: 2px 4px
+
+.main-menu .arrow a
+	font-size: 13px
+	font-weight: 400
+	color: $secondary-grey
+
+.header
+	font-size: 22px
+	font-weight: 400
+	width: 400px
+	margin-top: 100px
+	margin-bottom: 50px
+	color: $base-grey
+	-webkit-transition: color 0.2s linear
+	-moz-transition: color 0.2s linear
+	-ms-transition: color 0.2s linear
+	-o-transition: color 0.2s linear
+	transition: color 0.2s linear
+
+.header.image
+	width: 500px
+
+.header.image img
+	margin-right: 20px
+	-webkit-border-radius: 42px
+	-moz-border-radius: 42px
+	border-radius: 42px
+
+.main-link
+	font-size: 12px
+	font-weight: 400
+	background-color: #eaeaea
+	padding: 0px 20px 0px 20px
+	color: $base-grey
+	display: inline-block
+
+.main-link.icon
+	padding: 0px 10px 0px 20px
+
+.main-link span
+	padding: 10px 0px 10px 0px
+	display: block
+	float: left
+
+.main-link:hover
+	background-color: $base-grey
+	color: #ffffff
+	svg.classic-arrow path
+		fill: #ffffff
+
+svg.classic-arrow path
+	fill: $base-grey
+
+svg.classic-arrow
+	height: 25px
+	width: 25px
+	margin-top: 5px
+	float: right
+	margin-left: 20px
+
+.crop
+	width: 100%
+	height: 400px
+	overflow: hidden
+	margin-top: 50px
+
+.full-image
+	background-color: #b2d2bd
+	width: 100%
+	min-height: 400px
+	margin-top: -120px
+
+.sub-header
+	font-size: 18px
+	font-weight: 400
+	width: 400px
+	margin-top: 50px
+	margin-bottom: 25px
+
+.sub-header .arrow
+	display: inline
+	background: url('/img/arrow-dark.svg') no-repeat
+	background-size: 25px 25px
+	width: 50px
+	padding-left: 20px
+	background-position: -2px -1px
+
+p
+	font-size: 14px
+	font-weight: 400
+	color: #757575
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.logo
+	width: 960px
+	text-align: center
+
+#container
+	margin: auto
+	margin-top: 20px
+	width: 960px
+	margin-bottom: 50px
+
+#menu
+	list-style-type: none
+	margin-top: 20px
+	height: 40px
+	width: 100%
+	border-bottom: 3px solid #aaaaaa
+
+.menu
+	float: left
+	color: #404040
+	font-size: 15px
+
+#menu a
+	color: #999999
+	display: block
+	font-weight: Bold
+	text-decoration: none
+	height: 20px
+	font-size: 15px
+	width: 115px
+	text-align: center
+	padding: 10px 0px 10px 0px
+
+#menu a:hover
+	color: #333333
+	background-color: #e6e6e6
+
+#menu .active
+	color: #333333
+	background-color: #e6e6e6
+	border-bottom: 3px solid #d5d5d5
+
+.left
+	width: 640px
+	float: left
+
+.right
+	width: 280px
+	float: right
+
+.full
+	width: 960px
+	float: left
+
+.post
+	width: 100%
+	height: 200px
+	margin-bottom: 20px
+
+.post img
+	float: left
+	max-width: 100%
+	height: auto
+
+.post .text
+	padding: 10px 0px 10px 30px
+	width: 310px
+	float: right
+	color: #333
+	font-size: 13px
+	line-height: 18px
+
+.post .title
+	font-size: 18px
+	margin-bottom: 5px
+
+.post .title a
+	color: #333
+
+.post .title a:hover
+	color: #898989
+
+.post .date
+	font-size: 11px
+	color: #898989
+	font-weight: bold
+
+.post .more
+	font-size: 11px
+	color: #898989
+	font-weight: bold
+	float: right
+
+.tweet
+	width: 100%
+	margin-bottom: 20px
+
+.tweet .text
+	font-size: 13px
+	line-height: 18px
+
+.tweet .date
+	text-align: right
+	font-size: 11px
+	color: #898989
+	font-weight: bold
+
+.tweet .date a
+	color: #898989
+
+.tweet .date a:hover
+	color: #AAA
+
+.song
+	width: 100%
+	height: 22px
+	padding: 10px
+	margin-bottom: 10px
+
+.song:hover
+	background-color: #e6e6e6
+
+.song .title
+	float: left
+	font-size: 18px
+
+.song .controls
+	float: right
+	font-size: 11px
+	color: #898989
+	font-weight: bold
+	margin-top: 5px
+
+.genre
+	width: 100%
+	margin-bottom: 10px
+
+.genre .text
+	font-size: 14px
+
+.project
+	float: left
+	margin-bottom: 30px
+
+.project .spacer
+	margin-right: 30px
+
+.project img
+	max-width: 100%
+	height: auto
+
+.about
+	width: 100%
+	margin-bottom: 20px
+
+.about img
+	float: none
+	margin-bottom: 20px
+	max-width: 100%
+	height: auto
+
+.about_left
+	float: left
+
+.about .social
+	float: none
+	margin-right: 0px
+
+.about .social a
+	margin-right: 0
+
+.about .social img
+	background-color: #E6E6E6
+	margin-bottom: 15px
+
+.about .social img:hover
+	background-color: #D5D5D5
+
+.about .text
+	padding: 10px 0px 10px 30px
+	width: 630px
+	float: right
+	color: #333
+	font-size: 13px
+	line-height: 18px
+
+.about .title
+	font-size: 18px
+	margin-bottom: 5px
+
+.about .date
+	font-size: 11px
+	color: #898989
+	font-weight: bold
+	margin-bottom: 5px
+
+.category
+	width: 100%
+	margin-bottom: 10px
+
+.category .text
+	font-size: 14px
+
+.single_post
+	width: 100%
+	margin-bottom: 20px
+
+.single_post img
+	float: none
+	max-width: 100%
+	height: auto
+//	width: 100%
+//	height: 200px
+	margin-bottom: 20px
+//	-webkit-background-size: cover
+//	-moz-background-size: cover
+//	-o-background-size: cover
+//	background-size: cover
+
+.single_post_pic
+	float: none
+	width: 100%
+	height: 200px
+	margin-bottom: 20px
+//	-webkit-background-size: cover
+//	-moz-background-size: cover
+//	-o-background-size: cover
+//	background-size: cover
+
+.single_post_left
+	float: left
+
+.single_post .text
+	padding: 10px 0px 10px 0px
+	width: 100%
+	color: #333
+	font-size: 13px
+	line-height: 18px
+	border-bottom: 3px solid #AAA
+
+.single_post .title
+	font-size: 18px
+	margin-bottom: 5px
+
+.single_post .date
+	font-size: 11px
+	color: #898989
+	font-weight: bold
+	margin-bottom: 5px
+
+.fb-comments
+	width: 100% !important
+
+.fb_iframe_widget
+	width: 100% !important
+
+.fb_iframe_widget[style]
+	width: 100% !important
+
+.fb_iframe_widget iframe[style]
+	width: 100% !important
+
+.fbcomments iframe[style]
+	width: 100% !important
+
+.fb_iframe_widget span
+	width: 100% !important
+
+//	.project img
+//		border: 1px solid #ccc
+//
+//	.project img:hover
+//		border: 1px solid $main-color
+
+//	.project img
+//		-moz-box-shadow: 0 0 3px rgba(0,0,0,.2)
+//		-webkit-box-shadow: 0 0 3px rgba(0,0,0,.2)
+//		box-shadow: 0 0 3px rgba(0,0,0,.2)
+
+//	.project img:hover
+//		-moz-box-shadow: 0 0 3px rgba(86,162,206,.67)
+//		-webkit-box-shadow: 0 0 3px rgba(86,162,206,.67)
+//		box-shadow: 0 0 3px rgba(86,162,206,.67)
